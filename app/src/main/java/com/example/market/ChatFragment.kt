@@ -17,16 +17,15 @@ import com.example.market.model.ChatMessage
 import com.example.market.model.ChatRoom
 import com.example.market.model.Product
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.snapshots
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.launch
-import java.util.Calendar
 import java.util.Date
 
+@Suppress("DEPRECATION")
 class ChatFragment : BaseFragment() {
     companion object {
         fun getInstance(product: Product): ChatFragment? {
@@ -74,7 +73,6 @@ class ChatFragment : BaseFragment() {
             .snapshots()
             .mapLatest { it.documents.mapNotNull { it.toObject(ChatMessage::class.java) } }
     }
-
     private val adapter by lazy { ChatAdapter(auth.uid!!) }
 
 

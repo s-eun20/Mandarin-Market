@@ -1,5 +1,6 @@
 package com.example.market
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -51,5 +52,10 @@ class MainActivity : AppCompatActivity() {
                 onBackPressed()
             }
         }
+    }
+    fun replaceWithMainActivity2() {
+        val mainActivity2Intent = Intent(this, BottomActivity::class.java)
+        startActivity(mainActivity2Intent)
+        finish()
     }
 }

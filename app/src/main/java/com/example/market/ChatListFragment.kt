@@ -16,16 +16,15 @@ import com.example.market.databinding.ItemChatRoomBinding
 import com.example.market.model.ChatRoom
 import com.example.market.model.Product
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.snapshots
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.launch
-import java.text.SimpleDateFormat
-import java.util.Locale
 
+
+@Suppress("DEPRECATION")
 class ChatListFragment : BaseFragment() {
     companion object {
         fun getInstance(product: Product) = ChatListFragment().apply {

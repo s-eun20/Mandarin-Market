@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.market.databinding.FragmentDetailBinding
 import com.example.market.model.Product
 
+@Suppress("DEPRECATION")
 class DetailFragment : BaseFragment() {
     companion object {
         fun getInstance(product: Product): DetailFragment {

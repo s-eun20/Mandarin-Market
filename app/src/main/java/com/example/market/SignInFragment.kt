@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.AuthResult
@@ -39,12 +38,9 @@ class SignInFragment : Fragment() {
                         // 로그인 성공
                         Toast.makeText(requireContext(), "로그인 성공", Toast.LENGTH_SHORT).show()
 
-                        // ListFragment로 이동
-                        val transaction: FragmentTransaction =
-                            requireFragmentManager().beginTransaction()
-                        transaction.replace(R.id.fragment_container, ListFragment())
-                        transaction.addToBackStack(null)
-                        transaction.commit()
+                        // MainActivity.kt에서 MainActivity2.kt로 이동
+                        val mainActivity = activity as? MainActivity
+                        mainActivity?.replaceWithMainActivity2()
                     } else {
                         // 로그인 실패
                         Toast.makeText(requireContext(), "로그인 실패", Toast.LENGTH_SHORT).show()

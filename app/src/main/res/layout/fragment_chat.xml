@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,18 +9,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        >
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <!--recyclerview 안에 대화 내용 들어감-->
         <androidx.recyclerview.widget.RecyclerView
-            android:id='@+id/chat_recyclerView'
+            android:id="@+id/chat_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clipToPadding="false"
@@ -29,21 +24,28 @@
             app:reverseLayout="true"
             tools:listitem="@layout/item_chat_my_message" />
 
-    </FrameLayout>
+    </LinearLayout>
 
-    <!--입력 값, 전송 버튼-->
+    <!-- 입력 값, 전송 버튼 -->
     <LinearLayout
         android:id="@+id/input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="80dp"
         android:orientation="horizontal"
         android:paddingHorizontal="8dp">
 
+        <EditText
+            android:id="@+id/message_edit"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="메세지를 입력하세요"
+            android:minHeight="48dp" />
+
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:boxBackgroundColor="#f0f0f0"
             app:boxCornerRadiusBottomEnd="8dp"
@@ -54,17 +56,11 @@
             app:boxStrokeWidthFocused="0dp"
             app:hintEnabled="false">
 
-            <EditText
-                android:id="@+id/message_edit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="메세지를 입력하세요" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/send_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="68dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:insetTop="0dp"
@@ -72,7 +68,5 @@
             android:minWidth="0dp"
             android:paddingHorizontal="16dp"
             android:text="전송" />
-
     </LinearLayout>
-
 </LinearLayout>

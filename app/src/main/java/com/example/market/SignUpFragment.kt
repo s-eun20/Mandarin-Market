@@ -37,12 +37,9 @@ class SignUpFragment : Fragment() {
                     if (task.isSuccessful) {
                         // 등록 성공
                         val user = auth?.currentUser
-                        // ListFragment로 전환
-                        val transaction =
-                            requireActivity().supportFragmentManager.beginTransaction()
-                        transaction.replace(R.id.fragment_container, ListFragment())
-                        transaction.addToBackStack(null)
-                        transaction.commit()
+                        // MainActivity.kt에서 MainActivity2.kt로 이동
+                        val mainActivity = activity as? MainActivity
+                        mainActivity?.replaceWithMainActivity2()
                     } else {
                         // 등록 실패
                         // 에러 처리

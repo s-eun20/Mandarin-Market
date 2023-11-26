@@ -20,6 +20,7 @@ import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
+@Suppress("DEPRECATION")
 class WriteFragment : BaseFragment() {
     private var _binding: FragmentWriteBinding? = null
     private val binding get() = _binding!!

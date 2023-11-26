@@ -12,7 +12,7 @@ open class BaseFragment : Fragment() {
             if (findFragmentByTag(tag) != null) return
 
             beginTransaction()
-                .replace(R.id.fragment_container, fragment, tag)
+                .replace(R.id.fragment_container2, fragment, tag)
                 .addToBackStack(null)
                 .commit()
         }
