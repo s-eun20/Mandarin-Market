@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880435470912",
+    "project_id": "market50",
+    "storage_bucket": "market50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880435470912:android:77e26bc67f6ae00027b5a5",
+        "android_client_info": {
+          "package_name": "com.example.market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-m1uc00EBeaKSzYQsUvtKFg_TPlf7VYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
