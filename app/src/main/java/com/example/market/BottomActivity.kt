@@ -33,7 +33,7 @@ class BottomActivity : AppCompatActivity() {
                 }
                 R.id.chatList -> {
                     // '채팅' 아이템 선택
-                    replaceFragment(ChatListFragment())
+                    replaceFragment(BottomChatListFragment())
                     true
                 }
                 R.id.myPage -> {
@@ -48,6 +48,8 @@ class BottomActivity : AppCompatActivity() {
 
 
     fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.popBackStack()
+
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container2, fragment)
             .commit()

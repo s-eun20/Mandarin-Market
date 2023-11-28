@@ -62,7 +62,7 @@ class EditFragment : BaseFragment() {
 
         with(binding) {
             priceTextView2.hint = product.price
-            sellTextView2.hint = product.sell
+            sellSwitch.isChecked = product?.sell == "판매완료"
 
             button4.setOnClickListener {
                 updateProduct()
@@ -72,23 +72,28 @@ class EditFragment : BaseFragment() {
 
     private fun updateProduct() {
         var modifiedPrice = binding.priceTextView2.text.toString()
-        var modifiedSellStatus = binding.sellTextView2.text.toString()
+        val modifiedSellStatus = if (binding.sellSwitch.isChecked) "판매완료" else "판매중"
+
+
 
         if (modifiedPrice.isBlank()) {
             modifiedPrice = product.price.orEmpty()
         }
-        if (modifiedSellStatus.isBlank()) {
-            modifiedSellStatus = product.sell.orEmpty()
-        }
 
-        val productRef = firestore.collection("products").document(product.documentId)
-        productRef.update(
+
+
+        val productRef = firestore?.collection("products")?.document(product.documentId)
+        productRef?.update(
             mapOf(
                 "price" to modifiedPrice,
                 "sell" to modifiedSellStatus
             )
-        )
-
-        onBackPressed()
+        )?.addOnSuccessListener {
+            activity?.supportFragmentManager?.popBackStack()
+        }?.addOnFailureListener {
+            // Handle failure (e.g., show an error message)
+        }
     }
-}
+
+
+    }

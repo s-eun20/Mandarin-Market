@@ -26,24 +26,11 @@
         android:layout_height="29dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="24dp"
         android:text="판매여부"
         android:textColor="#F44336"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/sellTextView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <EditText
-        android:id="@+id/sellTextView2"
-        android:layout_width="106dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/priceTextView2" />
 
     <TextView
         android:id="@+id/textView9"
@@ -83,5 +70,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sellSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="판매완료"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/priceTextView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
