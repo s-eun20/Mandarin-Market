@@ -61,7 +61,7 @@ class DetailFragment : BaseFragment() {
         with(binding) {
             titleTextView.text = product.title
             priceTextView.text = product.price + "원"
-            contentTextView.text = product.content
+            contentTextView.text = if (product.content.isEmpty()) "자세한 내용이 없습니다" else product.content
             sellTextView.text = product.sell
 
             val sellerName = product.name

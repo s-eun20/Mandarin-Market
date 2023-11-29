@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        private const val DURATION: Long = 1000
+        private const val DURATION: Long = 100
     }
 
     private val callback = object : OnBackPressedCallback(true) {

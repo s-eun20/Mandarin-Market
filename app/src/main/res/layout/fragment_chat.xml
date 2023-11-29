@@ -37,7 +37,7 @@
 
         <EditText
             android:id="@+id/message_edit"
-            android:layout_width="310dp"
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
             android:hint="메세지를 입력하세요"
             android:minHeight="48dp" />
