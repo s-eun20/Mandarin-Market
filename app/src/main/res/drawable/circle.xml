@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#ffffff">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#9BE842" />
+            <size
+                android:width="45dp"
+                android:height="45dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/baseline_camera_alt_24"/>
+</ripple>

@@ -11,39 +11,44 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         android:text="판매목록"
+        android:textColor="?android:attr/colorActivatedHighlight"
         android:textSize="20sp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btnWrite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
-        android:layout_toEndOf="@id/textViewTitle"
-        android:text="글쓰기" />
+        android:background="@drawable/cute_write" />
+
+
+
 
     <Spinner
         android:id="@+id/spinnerFilter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewTitle"
-        android:layout_marginStart="-381dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="16dp"
-        android:layout_toEndOf="@id/btnWrite"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="41dp"
         android:minHeight="48dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="401dp"
-        android:layout_height="571dp"
+        android:layout_height="500dp"
         android:layout_below="@id/spinnerFilter"
         android:layout_marginTop="8dp"
         android:clipToPadding="false"
         android:padding="16dp"
         android:scrollbars="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
 
 </RelativeLayout>
 

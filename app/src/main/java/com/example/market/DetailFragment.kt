@@ -64,6 +64,9 @@ class DetailFragment : BaseFragment() {
             contentTextView.text = product.content
             sellTextView.text = product.sell
 
+            val sellerName = product.name
+            personTextView.text = "$sellerName"
+
             Glide.with(requireContext())
                 .load(product.imageUrl)
                 .into(imageView3)

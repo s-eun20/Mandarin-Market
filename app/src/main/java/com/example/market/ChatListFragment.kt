@@ -104,8 +104,15 @@ class ChatListFragment : BaseFragment() {
 
     private fun bindData() {
         lifecycleScope.launch {
-            rooms.collectLatest {
-                adapter.submitList(it)
+            rooms.collectLatest { chatRooms ->
+                if (chatRooms.isNotEmpty()) {
+                    binding.noChatTextView.visibility = View.GONE
+                    binding.recyclerView.visibility = View.VISIBLE
+                    adapter.submitList(chatRooms)
+                } else {
+                    binding.noChatTextView.visibility = View.VISIBLE
+                    binding.recyclerView.visibility = View.GONE
+                }
             }
         }
     }

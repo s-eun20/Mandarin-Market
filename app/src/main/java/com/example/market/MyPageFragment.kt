@@ -44,7 +44,7 @@ class MyPageFragment : BaseFragment() {
         with(binding) {
             myRecyclerView.adapter = adapter.apply {
                 onItemClickListener = {
-                    replaceFragment(DetailFragment.getInstance(it), "DetailFragment")
+                    replaceFragment(EditFragment.getInstance(it), "EditFragment")
                 }
 
                 onChatListClickListener = {
