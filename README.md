@@ -15,8 +15,12 @@
 <br><br>
 
 ## Tech Stack
-- 개발 환경 : <img src="https://img.shields.io/badge/androidstudio-34A853?style=for-the-badge&logo=androidstudio&logoColor=green">
-- 사용 언어 및 기술 : 코틀린, 파이어베이스
+- 개발 환경<br>
+<img src="https://img.shields.io/badge/androidstudio-34A853?style=for-the-badge&logo=androidstudio&logoColor=34A853">
+- 사용 언어 및 기술
+<img src="https://img.shields.io/badge/kotlin-#7F52FF?style=for-the-badge&logo=kotlin&logoColor=#7F52FF">
+<img src="https://img.shields.io/badge/firebase-#FFCA28?style=for-the-badge&logo=firebase&logoColor=#FFCA28">
+
 
 <br><br>
 
