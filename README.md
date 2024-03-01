@@ -19,17 +19,17 @@
 
 ## Tech Stack
 ### 개발 환경
-<img src="https://img.shields.io/badge/androidstudio-34A853?style=for-the-badge&logo=androidstudio&logoColor=black">
+<img src="https://img.shields.io/badge/androidstudio-34A853?style=for-the-badge&logo=androidstudio&logoColor=white">
 
 ### 사용 언어 및 기술
-<img src="https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=black"><img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
+<img src="https://img.shields.io/badge/kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"><img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
 
 
 <br><br>
 
 
 ## 프로젝트 설명
-2023 -2 텀프로젝트로 진행한 중고 거래 어플리케이션 입니다. 
+2023 -2 텀프로젝트로 진행한 중고 거래 어플리케이션 입니다. 회원가입/로그인을 통해 사용자를 입력받아 자신의 물건을 다른 사람들과 거래하고 다른 사람의 물건 또한 자유롭게 구매 가능한 앱 입니다. 사용자 정보, 물건 정보, 채팅 등은 파이어베이스를 통해 관리됩니다.
 
 
 
