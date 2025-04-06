@@ -30,6 +30,11 @@
 
 ## 프로젝트 설명
 2023 -2 텀프로젝트로 진행한 중고 거래 어플리케이션 입니다. 회원가입/로그인을 통해 사용자를 입력받아 자신의 물건을 다른 사람들과 거래하고 다른 사람의 물건 또한 자유롭게 구매 가능한 앱 입니다. 사용자 정보, 물건 정보, 채팅 등은 파이어베이스를 통해 관리됩니다.
+![001](https://github.com/Park-Hyunji/Market50/assets/115947715/9b5c1f85-7fcb-4379-a5bf-ba2f176e46d6)
+![002](https://github.com/Park-Hyunji/Market50/assets/115947715/6dc9019f-d60e-4543-8f90-8c0b43380189)
+![003](https://github.com/Park-Hyunji/Market50/assets/115947715/f1e3b85a-42fd-4caf-b753-f12c7b5d4961)
+![004](https://github.com/Park-Hyunji/Market50/assets/115947715/3c985264-d5a6-4d53-86cf-62a20e3c8dd4)
+![005](https://github.com/Park-Hyunji/Market50/assets/115947715/d95cd68e-5eca-42ed-a2ea-e2912a36c39c)
 
 
 
